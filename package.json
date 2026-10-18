@@ -1,0 +1,23 @@
+{
+  "name": "instagram-phone-headless",
+  "version": "0.1.0",
+  "description": "Drive the Instagram phone app (mobile web) in headless Chromium: log in once, then post photos, share stories, publish notes, like, comment, follow and DM from the command line or from Node.",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "ig": "src/cli.js"
+  },
+  "scripts": {
+    "start": "node src/cli.js",
+    "test": "node --test \"test/*.test.js\"",
+    "format": "prettier --write \"src/**/*.js\" \"test/**/*.js\" \"examples/**/*.mjs\""
+  },
+  "engines": {
+    "node": ">=20.12"
+  },
+  "dependencies": {
+    "playwright": "1.56.1"
+  },
+  "license": "MIT",
+  "private": true
+}
